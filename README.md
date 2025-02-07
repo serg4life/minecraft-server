@@ -1,5 +1,8 @@
 # minecraft-server
 
+> [!IMPORTANT]
+> By the moment the repo has to be cloned on \home directory to work.
+
 ## To download Minecraft Vanilla server version 1.21.4
 wget https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar
 
