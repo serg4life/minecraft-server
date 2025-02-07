@@ -7,7 +7,7 @@ if [ "$#" -lt 1 ]; then
 	exit 1
 fi
 
-SERVERS_DIR=/home/$USER/minecraft_server/
+SERVERS_DIR=/home/$USER/minecraft-server/
 cd $SERVERS_DIR
 
 ls $1 &>/dev/null
