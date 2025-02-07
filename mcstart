@@ -1,0 +1,23 @@
+#!/bin/bash
+
+RAM=3072
+
+if [ "$#" -lt 1 ]; then
+	echo "Usage: mcstart <server>"
+	exit 1
+fi
+
+SERVERS_DIR=/home/$USER/minecraft_server/
+cd $SERVERS_DIR
+
+ls $1 &>/dev/null
+if [ $? != 0 ]; then
+	echo "$1 server does not exist!"
+	exit 1;
+fi
+
+cd $1
+echo "---------------------------"
+echo "Starting $1 server!"
+echo "---------------------------"
+java -Xmx3072M -Xms3072M -jar server.jar nogui
