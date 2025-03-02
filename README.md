@@ -10,3 +10,5 @@ wget https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d54
 wget https://download.bell-sw.com/java/21.0.6+10/bellsoft-jdk21.0.6+10-linux-aarch64.deb
 
 sudo apt install ./bellsoft-jdk21.0.6+10-linux-aarch64.deb
+
+screen -S <session pid> -X quit
