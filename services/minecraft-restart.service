@@ -1,0 +1,8 @@
+[Unit]
+Description=Reiniciar el servidor de Minecraft
+Requires=minecraft-server.service
+After=minecraft-server.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl restart minecraft-server.service

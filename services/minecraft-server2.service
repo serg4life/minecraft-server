@@ -1,0 +1,12 @@
+[Unit]
+Description=Minecraft Spigot Server
+
+[Service]
+User=admin
+Group=admin
+Restart=on-abort
+WorkingDirectory=/home/admin/minecraft-server/Spigot
+ExecStart=/usr/bin/screen -DmS minecraft-screen /usr/bin/bash start.sh
+
+[Install]
+WantedBy=multi-user.target

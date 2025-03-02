@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup del servidor de Minecraft
+Before=minecraft-shutdown.service
+Requires=minecraft.service
+After=minecraft.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/minecraft-backup.sh

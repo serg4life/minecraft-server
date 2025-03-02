@@ -5,8 +5,8 @@ Description=Minecraft Vanilla Server
 User=admin
 Group=admin
 Restart=on-abort
-WorkingDirectory=/home/admin/minecraft-server/Vanilla/
-ExecStart=/usr/bin/java -Xms1024M -Xmx3072M -jar /home/admin/minecraft-server/Vanilla/server.jar nogui
+WorkingDirectory=/home/admin/minecraft-server/Vanilla
+ExecStart=/usr/bin/screen -DmS minecraft-screen /usr/bin/java -Xms1024M -Xmx3072M -jar server.jar nogui
 
 [Install]
 WantedBy=multi-user.target
